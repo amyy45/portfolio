@@ -7,8 +7,8 @@ const Hero: React.FC = () => {
   const [currentPhrase, setCurrentPhrase] = useState(0);
   
   const phrases = [
-    "Cybersecurity Specialist",
-    "Ethical Hacking Practitioner",
+    "Cybersecurity Enthusiast",
+    "Aspiring Ethical Hacker",
     "Security Researcher"
   ];
   
@@ -35,30 +35,23 @@ const Hero: React.FC = () => {
 
   return (
     <section id="hero" className="hero">
-      {/* Terminal-style header bar */}
-      <div className="terminal-bar">
-        <div className="terminal-buttons">
-          <div className="terminal-btn close"></div>
-          <div className="terminal-btn minimize"></div>
-          <div className="terminal-btn maximize"></div>
-        </div>
-        <div className="terminal-title">security-enthusiast@portfolio:~</div>
-        <div className="terminal-time">{new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</div>
-      </div>
-      
       {/* Animated background elements */}
       <div className="cyber-grid"></div>
-      <div className="binary-rain"></div>
-      
-      {/* Hexagon pattern overlay */}
-      <div className="hexagon-pattern"></div>
+      <div className="particle-background"></div>
+      <div className="security-shield"></div>
       
       <div className="hero-content">
-        <div className="main-terminal">
+        <div className="professional-terminal">
           <div className="terminal-header">
-            <div className="terminal-prompt">
-              <span className="prompt-user">security@portfolio</span>:
-              <span className="prompt-dir">~/home</span>$
+            <div className="terminal-dots">
+              <span className="terminal-dot red"></span>
+              <span className="terminal-dot yellow"></span>
+              <span className="terminal-dot green"></span>
+            </div>
+            <div className="terminal-title">sneha@cybersecurity-portfolio:~</div>
+            <div className="terminal-status">
+              <span className="status-indicator secure"></span>
+              <span className="status-text">SECURE CONNECTION</span>
             </div>
           </div>
           
@@ -69,57 +62,83 @@ const Hero: React.FC = () => {
             </div>
             
             <div className="output-content">
-              <h1 className="main-heading">Protecting Digital Frontiers</h1>
+              <h1 className="main-heading">
+                <span className="heading-accent">Securing</span> the Digital World
+              </h1>
+              
               <div className="typing-container">
-                <p className="output-line">Hello World! I'm a</p>
+                <p className="output-line">Hello, I'm Sneha</p>
                 <h2 className="typing-text">{displayText}<span className="cursor">_</span></h2>
               </div>
               
-              <div className="output-description">
-                <p>Passionate about ethical hacking, vulnerability research,</p>
-                <p>penetration testing, and all aspects of cybersecurity.</p>
+              <div className="expertise-list">
+                <div className="expertise-item">
+                  <span className="expertise-badge">✓</span>
+                  <span>Google Cybersecurity Professional Certified</span>
+                </div>
+                <div className="expertise-item">
+                  <span className="expertise-badge">✓</span>
+                  <span>Built StegoShield - AI-powered malware detection</span>
+                </div>
+                <div className="expertise-item">
+                  <span className="expertise-badge">✓</span>
+                  <span>Network Vulnerability Scanning & Reporting</span>
+                </div>
               </div>
             </div>
             
             <div className="command-line">
               <span className="prompt">$ </span>
-              <span className="command">./explore --skills</span>
+              <span className="command">connect --with-sneha</span>
               <span className="cursor">_</span>
             </div>
           </div>
         </div>
         
         <div className="action-buttons">
-          <button className="cyber-btn primary">
-            <span className="btn-icon">⟫</span>
-            <span className="btn-text">View Portfolio</span>
+          <button className="professional-btn primary">
+            <span className="btn-icon">🔍</span>
+            <span className="btn-text">View My Projects</span>
             <div className="btn-hover-effect"></div>
           </button>
-          <button className="cyber-btn secondary">
-            <span className="btn-icon">⚡</span>
-            <span className="btn-text">Contact Me</span>
+          <button className="professional-btn secondary">
+            <span className="btn-icon">📄</span>
+            <span className="btn-text">Download Resume</span>
             <div className="btn-hover-effect"></div>
           </button>
         </div>
         
-        <div className="stats-container">
-          <div className="stat-item">
-            <div className="stat-number">42</div>
-            <div className="stat-label">Projects Completed</div>
+        <div className="achievements-container">
+          <div className="achievement-item">
+            <div className="achievement-icon">🛡️</div>
+            <div className="achievement-content">
+              <div className="achievement-number">50+</div>
+              <div className="achievement-label">Security Projects</div>
+            </div>
           </div>
-          <div className="stat-item">
-            <div className="stat-number">128+</div>
-            <div className="stat-label">Vulnerabilities Found</div>
+          <div className="achievement-item">
+            <div className="achievement-icon">🔓</div>
+            <div className="achievement-content">
+              <div className="achievement-number">150+</div>
+              <div className="achievement-label">Vulnerabilities Found</div>
+            </div>
           </div>
-          <div className="stat-item">
-            <div className="stat-number">100%</div>
-            <div className="stat-label">Security Focused</div>
+          <div className="achievement-item">
+            <div className="achievement-icon">⚡</div>
+            <div className="achievement-content">
+              <div className="achievement-number">100%</div>
+              <div className="achievement-label">Commitment</div>
+            </div>
           </div>
         </div>
         
         <div className="scroll-indicator">
-          <div className="scroll-text">Explore Further</div>
-          <div className="scroll-arrow"></div>
+          <div className="scroll-text">Explore my cybersecurity journey</div>
+          <div className="scroll-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
         </div>
       </div>
     </section>

@@ -67,16 +67,16 @@ button:focus-visible {
   }
 }
 
-/* Navbar.css */
+/* Navbar.css - Updated to match hero and support large screens */
 :root {
-  --nav-bg: rgba(10, 10, 26, 0.8);
-  --nav-scrolled-bg: rgba(10, 10, 26, 0.95);
-  --text-primary: #00ff00;
-  --text-secondary: #ccc;
-  --text-hover: #00b7ff;
-  --neon-blue: #00b7ff;
-  --neon-pink: #ff00c8;
-  --terminal-black: #0a0a0a;
+  --nav-bg: rgba(7, 14, 29, 0.8);
+  --nav-scrolled-bg: rgba(15, 23, 42, 0.95);
+  --text-primary: #3b82f6;
+  --text-secondary: #cbd5e1;
+  --text-hover: #60a5fa;
+  --primary-blue: #2563eb;
+  --accent-blue: #60a5fa;
+  --terminal-bg: #0f172a;
 }
 
 .navbar {
@@ -87,12 +87,12 @@ button:focus-visible {
   background-color: var(--nav-bg);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  border-bottom: 1px solid rgba(0, 183, 255, 0.1);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
 }
 
 .navbar.scrolled {
   background-color: var(--nav-scrolled-bg);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
@@ -102,7 +102,7 @@ button:focus-visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 80px;
 }
 
 .nav-logo {
@@ -114,9 +114,9 @@ button:focus-visible {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-family: 'Courier New', monospace;
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-family: 'Inter', 'SF Mono', 'Fira Code', monospace;
+  font-weight: 700;
+  font-size: 1.4rem;
   color: var(--text-primary);
   transition: all 0.3s ease;
 }
@@ -126,12 +126,17 @@ button:focus-visible {
 }
 
 .logo-bracket {
-  color: var(--neon-blue);
+  color: var(--accent-blue);
+  font-weight: 400;
 }
 
 .logo-text {
   margin: 0 5px;
   position: relative;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .logo-text::after {
@@ -140,8 +145,8 @@ button:focus-visible {
   bottom: -2px;
   left: 0;
   width: 100%;
-  height: 1px;
-  background-color: var(--text-primary);
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-blue), var(--accent-blue));
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease;
@@ -159,7 +164,7 @@ button:focus-visible {
 }
 
 .nav-item {
-  margin: 0 15px;
+  margin: 0 18px;
   position: relative;
 }
 
@@ -168,17 +173,19 @@ button:focus-visible {
   align-items: center;
   text-decoration: none;
   color: var(--text-secondary);
-  font-family: 'Courier New', monospace;
-  font-size: 0.9rem;
-  padding: 10px 0;
+  font-family: 'Inter', 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 12px 0;
   transition: all 0.3s ease;
   position: relative;
 }
 
 .link-number {
-  color: var(--neon-blue);
-  margin-right: 5px;
-  font-weight: bold;
+  color: var(--primary-blue);
+  margin-right: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
 }
 
 .nav-link:hover {
@@ -191,8 +198,8 @@ button:focus-visible {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 1px;
-  background-color: var(--text-primary);
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-blue), var(--accent-blue));
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease;
@@ -204,19 +211,20 @@ button:focus-visible {
 }
 
 .nav-extra {
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 .resume-btn {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 10px 20px;
   background: transparent;
-  color: var(--neon-blue);
-  border: 1px solid var(--neon-blue);
-  border-radius: 4px;
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+  border-radius: 6px;
   text-decoration: none;
-  font-family: 'Courier New', monospace;
-  font-size: 0.9rem;
+  font-family: 'Inter', 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.95rem;
+  font-weight: 500;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -229,8 +237,8 @@ button:focus-visible {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(0, 183, 255, 0.2), transparent);
-  transition: all 0.5s ease;
+  background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.2), transparent);
+  transition: all 0.6s ease;
 }
 
 .resume-btn:hover::before {
@@ -238,15 +246,19 @@ button:focus-visible {
 }
 
 .resume-btn:hover {
-  background: rgba(0, 183, 255, 0.1);
-  box-shadow: 0 0 15px rgba(0, 183, 255, 0.3);
+  background: rgba(37, 99, 235, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
 }
 
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  padding: 5px;
+  padding: 8px;
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: 4px;
+  border: 1px solid rgba(37, 99, 235, 0.2);
 }
 
 .bar {
@@ -260,7 +272,7 @@ button:focus-visible {
 
 .hamburger.active .bar:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
-  background-color: var(--neon-pink);
+  background-color: var(--accent-blue);
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -269,7 +281,7 @@ button:focus-visible {
 
 .hamburger.active .bar:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -6px);
-  background-color: var(--neon-pink);
+  background-color: var(--accent-blue);
 }
 
 /* Mobile responsiveness */
@@ -283,16 +295,16 @@ button:focus-visible {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 70%;
+    width: 280px;
     height: 100vh;
-    background-color: var(--terminal-black);
+    background: linear-gradient(135deg, var(--terminal-bg) 0%, #1e293b 100%);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 20px;
+    padding: 60px 30px ;
     transition: right 0.4s ease;
-    border-left: 1px solid rgba(0, 183, 255, 0.2);
-    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.4);
   }
 
   .nav-menu.active {
@@ -300,24 +312,28 @@ button:focus-visible {
   }
 
   .nav-item {
-    margin: 15px 0;
+    margin: 20px 0;
     width: 100%;
     text-align: center;
   }
 
   .nav-link {
     justify-content: center;
-    padding: 15px 0;
+    padding: 18px 0;
     font-size: 1.1rem;
   }
 
   .nav-extra {
-    margin: 30px 0 0 0;
+    margin: 40px 0 0 0;
+    width: 100%;
+    text-align: center;
   }
 
   .resume-btn {
-    padding: 12px 24px;
-    font-size: 1rem;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 200px;
   }
 }
 
@@ -359,4 +375,99 @@ button:focus-visible {
 
 .nav-menu.active .nav-extra {
   animation: navLinkFade 0.6s ease forwards;
+}
+
+/* Large screen responsiveness (1700px and above) */
+@media screen and (min-width: 1700px) {
+  .nav-container {
+    max-width: 1600px;
+    padding: 0 10px;
+    height: 90px;
+  }
+  
+  .logo-link {
+    font-size: 1.6rem;
+  }
+  
+  .nav-item {
+    margin: 0 25px;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+    padding: 15px 0;
+  }
+  
+  .link-number {
+    font-size: 1rem;
+    margin-right: 8px;
+  }
+  
+  .resume-btn {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+  }
+  
+  .nav-extra {
+    margin-left: 40px;
+  }
+}
+
+/* Medium-large screens (1200px to 1699px) */
+@media screen and (min-width: 1200px) and (max-width: 1699px) {
+  .nav-container {
+    max-width: 1400px;
+  }
+  
+  .nav-item {
+    margin: 0 20px;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet screens (769px to 1199px) */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .nav-container {
+    padding: 0 15px;
+  }
+  
+  .nav-item {
+    margin: 0 12px;
+  }
+  
+  .nav-link {
+    font-size: 0.9rem;
+  }
+  
+  .resume-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Smooth transitions for all interactive elements */
+.nav-link, .resume-btn, .logo-link, .hamburger {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus states for accessibility */
+.nav-link:focus, .resume-btn:focus, .logo-link:focus {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .navbar, .nav-link, .resume-btn, .logo-link, .hamburger, .bar {
+    transition: none;
+  }
+  
+  .nav-menu.active .nav-item {
+    animation: none;
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
