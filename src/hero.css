@@ -85,89 +85,31 @@
 .hero-content {
   position: relative;
   z-index: 3;
-  text-align: center;
   width: 100%;
-  max-width: 1200px;
-  padding: 100px 20px 60px;
+  max-width: 1400px;
+  padding: 80px 40px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.professional-terminal {
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
   width: 100%;
-  max-width: 900px;
-  background: var(--terminal-bg);
-  border: 1px solid var(--terminal-border);
-  border-radius: 16px;
-  overflow: hidden;
-  margin-bottom: 50px;
-  box-shadow: 
-    0 20px 40px rgba(15, 23, 42, 0.6),
-    0 0 0 1px rgba(37, 99, 235, 0.2);
-  backdrop-filter: blur(12px);
-}
-
-.terminal-header {
-  background: linear-gradient(90deg, rgba(30, 64, 175, 0.8) 0%, rgba(37, 99, 235, 0.6) 100%);
-  padding: 15px 25px;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 15px;
+  padding: 50px 20px 80px 60px;
+  margin-bottom: 40px;
 }
 
-.terminal-dots {
-  display: flex;
-  gap: 8px;
-}
-
-.terminal-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.terminal-dot.red { background-color: #ef4444; }
-.terminal-dot.yellow { background-color: #f59e0b; }
-.terminal-dot.green { background-color: #10b981; }
-
-.terminal-title {
-  color: var(--text-primary);
-  font-size: 0.95rem;
-  font-weight: 500;
-  flex-grow: 1;
+.hero-intro {
   text-align: left;
 }
 
-.terminal-status {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.status-indicator {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--success-green);
-  animation: pulse 2s infinite;
-}
-
-.status-text {
-  color: var(--success-green);
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
-}
-
-.terminal-body {
-  padding: 40px;
+.intro-content {
+  max-width: 1000px;
 }
 
 .command-line {
@@ -188,16 +130,13 @@
   font-weight: 500;
 }
 
-.output-content {
-  margin: 40px 0;
-}
-
 .main-heading {
-  font-size: 3.2rem;
-  margin-bottom: 30px;
+  font-size: 3.5rem;
+  margin-bottom: 25px;
   color: var(--text-primary);
   font-weight: 700;
   line-height: 1.2;
+  text-align: left;
 }
 
 .heading-accent {
@@ -209,69 +148,47 @@
 }
 
 .typing-container {
-  margin: 35px 0;
+  margin: 30px 0;
 }
 
 .output-line {
   margin-bottom: 12px;
   color: var(--text-secondary);
-  font-size: 1.2rem;
+  font-size: 3rem;
   font-weight: 500;
+  text-align: left;
 }
 
 .typing-text {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin: 20px 0;
   color: var(--primary-blue);
-  min-height: 2.6rem;
+  min-height: 2.8rem;
   font-weight: 600;
-}
-
-.expertise-list {
-  margin-top: 40px;
   text-align: left;
-  max-width: 600px;
-  margin: 40px auto 0;
 }
 
-.expertise-item {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 15px;
+.hero-description {
+  margin: 30px 0;
   color: var(--text-secondary);
-  font-size: 1.1rem;
-}
-
-.expertise-badge {
-  color: var(--success-green);
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.cursor {
-  animation: blink 1s infinite;
-  color: var(--primary-blue);
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  font-size: 1.7rem;
+  line-height: 1.6;
+  text-align: left;
 }
 
 .action-buttons {
   display: flex;
-  gap: 25px;
-  margin: 50px 0;
+  gap: 20px;
+  margin: 40px 0;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .professional-btn {
   position: relative;
   background: transparent;
   border: 2px solid var(--primary-blue);
-  padding: 18px 36px;
+  padding: 16px 32px;
   color: var(--text-primary);
   font-family: inherit;
   font-size: 1.1rem;
@@ -282,7 +199,7 @@
   border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .professional-btn.secondary {
@@ -315,52 +232,186 @@
   box-shadow: 0 8px 25px rgba(203, 213, 225, 0.3);
 }
 
-.achievements-container {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  margin: 50px 0;
-  flex-wrap: wrap;
-}
-
-.achievement-item {
+.hero-visual {
+  position: relative;
+  height: 400px;
   display: flex;
   align-items: center;
-  gap: 20px;
-  text-align: left;
+  justify-content: center;
 }
 
-.achievement-icon {
-  font-size: 2.5rem;
-  opacity: 0.8;
+.cyber-visualization {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.achievement-content {
+.network-node {
+  position: absolute;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 }
 
-.achievement-number {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: var(--primary-blue);
-  line-height: 1;
+.main-node {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.achievement-label {
+.node-core {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
+  border-radius: 50%;
+  position: relative;
+  z-index: 3;
+}
+
+.node-rings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(37, 99, 235, 0.3);
+  border-radius: 50%;
+  animation: pulse-ring 3s infinite;
+}
+
+.ring-1 {
+  width: 100px;
+  height: 100px;
+  animation-delay: 0s;
+}
+
+.ring-2 {
+  width: 140px;
+  height: 140px;
+  animation-delay: 1s;
+}
+
+.ring-3 {
+  width: 180px;
+  height: 180px;
+  animation-delay: 2s;
+}
+
+@keyframes pulse-ring {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+.node-1 {
+  top: 20%;
+  left: 20%;
+}
+
+.node-2 {
+  top: 20%;
+  right: 20%;
+}
+
+.node-3 {
+  bottom: 20%;
+  right: 30%;
+}
+
+.node-icon {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.node-label {
   color: var(--text-secondary);
   font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 600;
-  margin-top: 5px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.network-connections {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.connection {
+  position: absolute;
+  background: linear-gradient(90deg, var(--primary-blue), transparent);
+  height: 2px;
+  transform-origin: left center;
+}
+
+.connection-1 {
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  transform: rotate(-45deg);
+  animation: pulse-line 3s infinite;
+}
+
+.connection-2 {
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  transform: rotate(45deg);
+  animation: pulse-line 3s infinite 1s;
+}
+
+.connection-3 {
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  transform: rotate(135deg);
+  animation: pulse-line 3s infinite 2s;
+}
+
+@keyframes pulse-line {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.terminal-footer {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px 0;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: var(--primary-blue);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .scroll-indicator {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .scroll-text {
@@ -383,28 +434,16 @@
 /* Enhanced responsive design for large screens (1700px and above) */
 @media screen and (min-width: 1700px) {
   .hero-content {
-    max-width: 1600px;
+    max-width: 2400px;
     padding: 120px 40px 80px;
   }
   
-  .professional-terminal {
-    max-width: 1100px;
-  }
-  
-  .terminal-body {
-    padding: 50px;
-  }
-  
   .main-heading {
-    font-size: 3.8rem;
+    font-size: 4rem;
   }
   
   .typing-text {
     font-size: 2.8rem;
-  }
-  
-  .expertise-item {
-    font-size: 1.2rem;
   }
   
   .action-buttons {
@@ -415,50 +454,51 @@
     padding: 20px 40px;
     font-size: 1.2rem;
   }
-  
-  .achievements-container {
-    gap: 80px;
-  }
-  
-  .achievement-number {
-    font-size: 2.8rem;
-  }
-  
-  .achievement-label {
-    font-size: 1rem;
-  }
 }
 
 /* Standard responsive design */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .hero-intro {
+    text-align: center;
+  }
+  
+  .main-heading,
+  .output-line,
+  .typing-text,
+  .hero-description {
+    text-align: center;
+  }
+  
+  .action-buttons {
+    justify-content: center;
+  }
+  
+  .hero-visual {
+    height: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .security-shield {
     display: none;
   }
   
-  .terminal-header {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-  
-  .terminal-status {
-    justify-content: center;
-  }
-  
   .hero-content {
-    padding: 80px 15px 40px;
+    padding: 80px 20px 40px;
   }
   
   .main-heading {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
   
   .typing-text {
     font-size: 1.8rem;
-  }
-  
-  .expertise-item {
-    font-size: 1rem;
   }
   
   .action-buttons {
@@ -472,14 +512,28 @@
     justify-content: center;
   }
   
-  .achievements-container {
-    gap: 30px;
+  .hero-visual {
+    height: 250px;
   }
   
-  .achievement-item {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
+  .node-core {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .ring-1 {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .ring-2 {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .ring-3 {
+    width: 130px;
+    height: 130px;
   }
 }
 
@@ -492,13 +546,8 @@
     font-size: 1.5rem;
   }
   
-  .terminal-body {
-    padding: 25px 15px;
-  }
-  
-  .expertise-item {
-    font-size: 0.9rem;
-    gap: 10px;
+  .hero-description {
+    font-size: 1rem;
   }
   
   .professional-btn {
@@ -506,31 +555,23 @@
     font-size: 1rem;
   }
   
-  .achievement-icon {
-    font-size: 2rem;
-  }
-  
-  .achievement-number {
-    font-size: 1.8rem;
+  .hero-visual {
+    height: 200px;
   }
 }
 
 /* Medium-large screens (1200px to 1699px) */
 @media screen and (min-width: 1200px) and (max-width: 1699px) {
   .hero-content {
-    max-width: 1400px;
-  }
-  
-  .professional-terminal {
-    max-width: 1000px;
+    max-width: 1200px;
   }
   
   .main-heading {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
   
   .typing-text {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -547,7 +588,7 @@
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
-  .cursor, .status-indicator, .scroll-arrow, .btn-hover-effect {
+  .cursor, .ring, .connection, .scroll-arrow, .btn-hover-effect {
     animation: none;
   }
   

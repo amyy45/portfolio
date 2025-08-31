@@ -75,7 +75,7 @@ button:focus-visible {
   --text-secondary: #cbd5e1;
   --text-hover: #60a5fa;
   --primary-blue: #2563eb;
-  --accent-blue: #60a5fa;
+  --accent-blue: #0e223a;
   --terminal-bg: #0f172a;
 }
 
@@ -84,10 +84,9 @@ button:focus-visible {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: var(--nav-bg);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+  
 }
 
 .navbar.scrolled {
@@ -380,7 +379,7 @@ button:focus-visible {
 /* Large screen responsiveness (1700px and above) */
 @media screen and (min-width: 1700px) {
   .nav-container {
-    max-width: 1600px;
+    max-width: 2400px;
     padding: 0 10px;
     height: 90px;
   }

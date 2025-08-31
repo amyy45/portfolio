@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         <div className="nav-logo">
           <a href="#hero" className="logo-link">
             <span className="logo-bracket">[</span>
-            <span className="logo-text">CYBER_SEC</span>
+            <span className="logo-text">Trace_Route</span>
             <span className="logo-bracket">]</span>
           </a>
         </div>
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
           </div>
           
           <div className="nav-extra">
-            <a href="/resume.pdf" className="resume-btn" target="_blank" rel="noopener noreferrer">
+            <a href="/resume.pdf" className="resume-btn cursor-target" target="_blank" rel="noopener noreferrer">
               Resume
             </a>
           </div>
