@@ -1,3 +1,4 @@
+/* TargetCursor.css - Fixed version */
 .target-cursor-wrapper {
   position: fixed;
   top: 0;
@@ -6,7 +7,7 @@
   height: 0;
   pointer-events: none;
   z-index: 9999;
-  mix-blend-mode: difference;
+  /* Removed mix-blend-mode: difference; */
   transform: translate(-50%, -50%);
 }
 
@@ -16,7 +17,7 @@
   top: 50%;
   width: 4px;
   height: 4px;
-  background: #fff;
+  background: #3b82f6; /* Using a blue color instead of white */
   border-radius: 50%;
   transform: translate(-50%, -50%);
   will-change: transform;
@@ -28,10 +29,11 @@
   top: 50%;
   width: 12px;
   height: 12px;
-  border: 3px solid #fff;
+  border: 3px solid #3b82f6; /* Using a blue color instead of white */
   will-change: transform;
 }
 
+/* Rest of your TargetCursor.css remains the same */
 .corner-tl {
   transform: translate(-150%, -150%);
   border-right: none;
