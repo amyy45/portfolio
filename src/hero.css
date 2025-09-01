@@ -1,4 +1,4 @@
-/* Hero.css - Enhanced Professional Version */
+/* Hero.css - Enhanced Professional Version with Fixed Mobile Padding & Network Connections */
 :root {
   --primary-blue: #2563eb;
   --dark-blue: #1e40af;
@@ -462,6 +462,7 @@
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
+    padding: 40px 20px 60px 20px; /* Fixed padding for tablet */
   }
   
   .hero-intro {
@@ -482,6 +483,32 @@
   .hero-visual {
     height: 300px;
   }
+  
+  .hero-content {
+    padding: 60px 20px 40px; /* Adjusted for tablet */
+  }
+  
+  /* Fix network connections for tablet */
+  .node-1 {
+    top: 15%;
+    left: 15%;
+  }
+  
+  .node-2 {
+    top: 15%;
+    right: 15%;
+  }
+  
+  .node-3 {
+    bottom: 15%;
+    right: 25%;
+  }
+  
+  .connection-1,
+  .connection-2,
+  .connection-3 {
+    width: 80px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -490,26 +517,41 @@
   }
   
   .hero-content {
-    padding: 80px 20px 40px;
+    padding: 40px 15px 30px; /* Fixed mobile padding */
+  }
+  
+  .hero-grid {
+    padding: 30px 15px 40px 15px; /* Fixed mobile padding */
+    margin-bottom: 20px;
+    gap: 30px;
   }
   
   .main-heading {
     font-size: 2.5rem;
+    margin-bottom: 15px;
   }
   
   .typing-text {
     font-size: 1.8rem;
+    margin: 15px 0;
+  }
+  
+  .hero-description {
+    font-size: 1.4rem;
+    margin: 20px 0;
   }
   
   .action-buttons {
     flex-direction: column;
     gap: 15px;
+    margin: 30px 0;
   }
   
   .professional-btn {
     width: 100%;
     max-width: 280px;
     justify-content: center;
+    padding: 14px 24px; /* Adjusted button padding for mobile */
   }
   
   .hero-visual {
@@ -535,28 +577,140 @@
     width: 130px;
     height: 130px;
   }
+  
+  .command-line {
+    margin-bottom: 15px;
+  }
+  
+  .typing-container {
+    margin: 20px 0;
+  }
+  
+  /* Fix network connections for mobile */
+  .node-1 {
+    top: 10%;
+    left: 10%;
+  }
+  
+  .node-2 {
+    top: 10%;
+    right: 10%;
+  }
+  
+  .node-3 {
+    bottom: 10%;
+    right: 20%;
+  }
+  
+  .connection-1,
+  .connection-2,
+  .connection-3 {
+    width: 60px;
+  }
+  
+  .node-icon {
+    font-size: 1.4rem;
+  }
+  
+  .node-label {
+    font-size: 0.7rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .hero-content {
+    text-align: justify;
+    padding: 30px 10px 20px; /* Further reduced for very small screens */
+  }
+  
+  .hero-grid {
+    padding: 90px 10px 30px 10px; /* Further reduced for very small screens */
+  }
+  
   .main-heading {
     font-size: 2rem;
+    text-align: justify;
+  }
+  
+  .output-line {
+    font-size: 2.2rem;
+    text-align: justify;
   }
   
   .typing-text {
     font-size: 1.5rem;
+    min-height: 2.2rem;
   }
   
   .hero-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: left;
   }
   
   .professional-btn {
-    padding: 14px 28px;
+    padding: 12px 20px;
     font-size: 1rem;
+    align-self: center;
   }
   
   .hero-visual {
     height: 200px;
+  }
+  
+  .scroll-indicator {
+    margin-top: 30px;
+  }
+  
+  /* Further fix network connections for very small screens */
+  .node-1 {
+    top: 5%;
+    left: 5%;
+  }
+  
+  .node-2 {
+    top: 5%;
+    right: 5%;
+  }
+  
+  .node-3 {
+    bottom: 5%;
+    right: 15%;
+  }
+  
+  .connection-1,
+  .connection-2,
+  .connection-3 {
+    width: 40px;
+  }
+  
+  .node-core {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .ring-1 {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .ring-2 {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .ring-3 {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .node-icon {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .node-label {
+    font-size: 0.6rem;
   }
 }
 
