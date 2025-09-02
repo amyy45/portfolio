@@ -3,7 +3,7 @@ import TargetCursor from '../components/TargetCursor';
 import '../contact.css';
 
 // Import icons (you'll need to install react-icons or use your preferred method)
-import { FaGithub, FaLinkedin, FaTwitter, FaDiscord } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -78,13 +78,14 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="info-items">
-                <div className="info-item cursor-target">
+                <a href="mailto:threatlayer@gmail.com" className="info-item cursor-target block no-underline">
                   <div className="info-icon">📧</div>
                   <div className="info-content">
                     <h3>Email</h3>
-                    <p>sneha@example.com</p>
+                    <p>threatlayer@gmail.com</p>
                   </div>
-                </div>
+                </a>
+
                 
                 <div className="info-item cursor-target">
                   <div className="info-icon">📍</div>
@@ -94,45 +95,35 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
                 
-                <a href="https://linkedin.com/in/sneha" className="info-item cursor-target" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/sneha-sah-760b40250/" className="info-item cursor-target" target="_blank" rel="noopener noreferrer">
                   <div className="info-icon linkedin">
                     <FaLinkedin />
                   </div>
                   <div className="info-content">
                     <h3>LinkedIn</h3>
-                    <p>/in/sneha</p>
+                    <p>@sneha-sah-760b40250</p>
                   </div>
                 </a>
                 
-                <a href="https://github.com/sneha" className="info-item cursor-target" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/amyy45" className="info-item cursor-target" target="_blank" rel="noopener noreferrer">
                   <div className="info-icon github">
                     <FaGithub />
                   </div>
                   <div className="info-content">
                     <h3>GitHub</h3>
-                    <p>@sneha</p>
+                    <p>@amyy45</p>
                   </div>
                 </a>
 
-                <a href="https://twitter.com/sneha" className="info-item cursor-target" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/threat_layer" className="info-item cursor-target" target="_blank" rel="noopener noreferrer">
                   <div className="info-icon twitter">
                     <FaTwitter />
                   </div>
                   <div className="info-content">
                     <h3>Twitter</h3>
-                    <p>@sneha</p>
+                    <p>@threat_layer</p>
                   </div>
                 </a>
-
-                <div className="info-item cursor-target">
-                  <div className="info-icon discord">
-                    <FaDiscord />
-                  </div>
-                  <div className="info-content">
-                    <h3>Discord</h3>
-                    <p>sneha#1234</p>
-                  </div>
-                </div>
               </div>
             </div>
             

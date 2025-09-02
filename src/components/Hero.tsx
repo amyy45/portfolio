@@ -134,7 +134,7 @@ const Hero: React.FC = () => {
           {/* Contact Icons */}
           <div className="contact-icons">
             <a 
-              href="https://linkedin.com/in/yourprofile" 
+              href="https://www.linkedin.com/in/sneha-sah-760b40250/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="contact-link cursor-target"
@@ -146,7 +146,7 @@ const Hero: React.FC = () => {
             </a>
             
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/amyy45" 
               target="_blank" 
               rel="noopener noreferrer"
               className="contact-link cursor-target"
@@ -158,7 +158,7 @@ const Hero: React.FC = () => {
             </a>
             
             <a 
-              href="mailto:your.email@example.com" 
+              href="mailto:threatlayer@gmail.com" 
               className="contact-link cursor-target"
               aria-label="Send Email"
             >
