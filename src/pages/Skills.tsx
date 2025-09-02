@@ -44,6 +44,7 @@ const Skills: React.FC = () => {
               <span className="skill-item cursor-target">Python</span>
               <span className="skill-item cursor-target">C</span>
               <span className="skill-item cursor-target">C++</span>
+              <span className="skill-item cursor-target">Java</span>
               <span className="skill-item cursor-target">JavaScript</span>
               <span className="skill-item cursor-target">TypeScript</span>
             </div>
@@ -144,8 +145,8 @@ const Skills: React.FC = () => {
             <div className="btn-hover-effect"></div>
           </button>
           <button className="professional-btn secondary cursor-target">
-            <span className="btn-icon">🔍</span>
-            <span className="btn-text">See Projects</span>
+            <span className="btn-icon">🎓</span>
+            <span className="btn-text">Education</span>
             <div className="btn-hover-effect"></div>
           </button>
         </div>

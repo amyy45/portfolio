@@ -90,6 +90,72 @@ const About: React.FC = () => {
           </div>
         </div>
         
+        {/* Education and Experience Grid */}
+        <div className="edu-exp-grid">
+          {/* Education Section */}
+          <div className="edu-exp-section">
+            <div className="command-line">
+              <span className="prompt">$ </span>
+              <span className="command">cat education.txt</span>
+            </div>
+            
+            <div className="edu-exp-content">
+              <div className="edu-exp-item">
+                <div className="edu-exp-header">
+                  <h3 className="edu-exp-title">Icfai University, Hyderabad</h3>
+                  <span className="edu-exp-period">2022 – 2026</span>
+                </div>
+                <p className="edu-exp-subtitle">B.Tech in Computer Science Engineering</p>
+                <p className="edu-exp-detail">CGPA: 7.92 (till 7th semester)</p>
+              </div>
+              
+              <div className="edu-exp-item">
+                <div className="edu-exp-header">
+                  <h3 className="edu-exp-title">Narayana Junior College (CBSE)</h3>
+                  <span className="edu-exp-period">2022</span>
+                </div>
+                <p className="edu-exp-subtitle">Intermediate</p>
+                <p className="edu-exp-detail">Score: 75.5%</p>
+              </div>
+              
+              <div className="edu-exp-item">
+                <div className="edu-exp-header">
+                  <h3 className="edu-exp-title">B.D.M. International (CBSE)</h3>
+                  <span className="edu-exp-period">2020</span>
+                </div>
+                <p className="edu-exp-subtitle">Secondary</p>
+                <p className="edu-exp-detail">Score: 81.30%</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Experience Section */}
+          <div className="edu-exp-section">
+            <div className="command-line">
+              <span className="prompt">$ </span>
+              <span className="command">cat experience.txt</span>
+            </div>
+            
+            <div className="edu-exp-content">
+              <div className="edu-exp-item">
+                <div className="edu-exp-header">
+                  <h3 className="edu-exp-title">Qworkz Technology Solutions</h3>
+                  <span className="edu-exp-period">Jun 2024 – Jul 2024</span>
+                </div>
+                <p className="edu-exp-subtitle">Full Stack Developer Intern</p>
+                <div className="edu-exp-details">
+                  <ul>
+                    <li>Developed and maintained full-stack web applications using PHP (Laravel) and Bootstrap</li>
+                    <li>Collaborated with the UI/UX team to build responsive, user-friendly interfaces</li>
+                    <li>Worked on Document Management System project with features like document upload, version control, and authentication</li>
+                    <li>Gained hands-on experience with Git, API integration, MySQL database management, performance optimization, bug fixing, and testing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         {/* Goals section */}
         <div className="goals-section">
           <div className="command-line">

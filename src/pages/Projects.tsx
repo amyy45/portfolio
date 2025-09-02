@@ -1,47 +1,149 @@
-import React from "react";
+import React from 'react';
+import TargetCursor from '../components/TargetCursor';
+import '../projects.css';
+
+// Import project images (you'll need to add these to your project)
+import stegoshieldImage from '../assets/stegoshield.jpg';
+import expenseTrackerImage from '../assets/expense-tracker.png';
+import vulnerabilityScanImage from '../assets/vulnerability-scan.png';
+import cyberLabsImage from '../assets/cyber-labs.png';
 
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "StegoShield",
-      description:
-        "A deep learning based web app to detect hidden malicious payloads in image, audio, and video files using steganography techniques.",
-      link: "#",
+      id: 1,
+      title: "StegoShield – AI Based Steganography Detection Platform",
+      stack: "PyTorch, Flask, PostgreSQL, React.js, Tailwind CSS, Firebase, Cloudinary",
+      description: "Built a full-stack web app to detect hidden malicious payloads in images, audio, and video using deep learning (ResNet, CNN, EfficientNet-LSTM).",
+      features: [
+        "User authentication & authorization",
+        "Real-time file analysis",
+        "Upload history tracking",
+        "Interactive dashboards",
+        "Suspicious file reporting system"
+      ],
+      image: stegoshieldImage,
+      status: "completed"
     },
     {
-      title: "Network Vulnerability Scanner",
-      description:
-        "A Kali Linux project for scanning and reporting network vulnerabilities with automated analysis.",
-      link: "#",
+      id: 2,
+      title: "Personal Expense Tracker",
+      stack: "PHP, MySQL, HTML, CSS, JavaScript",
+      description: "Built a budget management system with visual analytics to track spending patterns.",
+      features: [
+        "Expense categorization",
+        "Interactive charts & reports",
+        "Budget planning tools",
+        "Financial insights dashboard",
+        "Export functionality"
+      ],
+      image: expenseTrackerImage,
+      status: "completed"
     },
     {
-      title: "Portfolio Website",
-      description:
-        "This portfolio itself 🚀 — built with React, TypeScript, TailwindCSS, and Vite.",
-      link: "#",
+      id: 3,
+      title: "Network Vulnerability Scanning & Reporting",
+      stack: "Kali Linux, Nmap, OpenVAS, Python",
+      description: "Conducting comprehensive vulnerability assessments on simulated network environments.",
+      features: [
+        "Network vulnerability scanning",
+        "Detailed security reports",
+        "Misconfiguration identification",
+        "Open port analysis",
+        "Remediation recommendations"
+      ],
+      image: vulnerabilityScanImage,
+      status: "ongoing"
     },
+    {
+      id: 4,
+      title: "Mini Cybersecurity Labs / Practice Projects",
+      stack: "Linux, Wireshark, Burp Suite, Python Scripts",
+      description: "Hands-on labs covering various cybersecurity domains and practical security testing.",
+      features: [
+        "Incident response escalation",
+        "Log analysis exercises",
+        "Password cracking techniques",
+        "Web application security testing",
+        "Network monitoring practices"
+      ],
+      image: cyberLabsImage,
+      status: "completed"
+    }
   ];
 
   return (
-    <section className="min-h-screen bg-gray-100 px-6 py-16">
-      <div className="max-w-5xl mx-auto text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-10">Projects</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300"
-            >
-              <h2 className="text-2xl font-semibold text-blue-600">
-                {project.title}
-              </h2>
-              <p className="mt-3 text-gray-700">{project.description}</p>
-              <a
-                href={project.link}
-                className="mt-4 inline-block text-sm text-blue-500 hover:text-blue-700"
-              >
-                View Project →
-              </a>
+    <section id="projects" className="projects">
+      {/* Add the TargetCursor component */}
+      <TargetCursor 
+        targetSelector=".cursor-target" 
+        spinDuration={2} 
+        hideDefaultCursor={true} 
+      />
+      
+      {/* Animated background elements */}
+      <div className="cyber-grid"></div>
+      <div className="particle-background"></div>
+      
+      <div className="projects-content">
+        <div className="projects-header">
+          <div className="command-line">
+            <span className="prompt">$ </span>
+            <span className="command">cat projects.txt</span>
+          </div>
+          
+          <h1 className="main-heading">
+            <span className="heading-accent">📌 Featured</span> Projects
+          </h1>
+          
+          <div className="command-line">
+            <span className="prompt">$ </span>
+            <span className="command">projects --show-all --detailed</span>
+          </div>
+        </div>
+
+        <div className="projects-grid">
+          {projects.map((project) => (
+            <div key={project.id} className="project-card">
+              <div className="project-image">
+                <img src={project.image} alt={project.title} />
+                <div className={`project-status ${project.status}`}>
+                  {project.status === "ongoing" ? "🟡 Ongoing" : "✅ Completed"}
+                </div>
+              </div>
+              
+              <div className="project-content">
+                <h2 className="project-title">{project.title}</h2>
+                
+                <div className="project-stack">
+                  <span className="stack-label">Tech Stack:</span>
+                  <span className="stack-items">{project.stack}</span>
+                </div>
+                
+                <p className="project-description">{project.description}</p>
+                
+                <div className="project-features">
+                  <h4>Key Features:</h4>
+                  <ul>
+                    {project.features.map((feature, index) => (
+                      <li key={index}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div className="project-actions">
+                  <button className="professional-btn primary cursor-target">
+                    <span className="btn-icon">👁️</span>
+                    <span className="btn-text">View Demo</span>
+                    <div className="btn-hover-effect"></div>
+                  </button>
+                  <button className="professional-btn secondary cursor-target">
+                    <span className="btn-icon">🐙</span>
+                    <span className="btn-text">GitHub</span>
+                    <div className="btn-hover-effect"></div>
+                  </button>
+                </div>
+              </div>
             </div>
           ))}
         </div>
