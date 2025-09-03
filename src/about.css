@@ -212,7 +212,83 @@
   text-align: center;
 }
 
-/* Responsive Design */
+/* Responsive Design for 1200px to 1900px screens */
+@media (min-width: 1200px) and (max-width: 1900px) {
+  .about-content {
+    max-width: 1200px;
+    padding: 60px 30px;
+  }
+  
+  .about-grid {
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .edu-exp-grid {
+    gap: 35px;
+    margin-bottom: 50px;
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+    margin: 25px 0;
+  }
+  
+  .skills-visual {
+    padding: 25px;
+  }
+  
+  .skill-heading {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  
+  .skill-item {
+    padding: 7px 14px;
+    font-size: 0.85rem;
+  }
+  
+  .edu-exp-section {
+    padding: 25px;
+  }
+  
+  .edu-exp-title {
+    font-size: 1.15rem;
+  }
+  
+  .edu-exp-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .edu-exp-detail {
+    font-size: 0.85rem;
+  }
+  
+  .edu-exp-details li {
+    font-size: 0.85rem;
+  }
+  
+  .goals-section {
+    max-width: 800px;
+    padding: 35px;
+  }
+  
+  .goals-content {
+    font-size: 1.1rem;
+    margin: 25px 0;
+  }
+  
+  /* Adjust font sizes for better readability on large screens */
+  .command-line {
+    font-size: 0.95rem;
+  }
+  
+  .main-heading {
+    font-size: 2.5rem;
+  }
+}
+
+/* Responsive Design for standard screens */
 @media (max-width: 1200px) {
   .edu-exp-grid {
     gap: 30px;

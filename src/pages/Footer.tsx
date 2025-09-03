@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
             <div className="contact-info">
               <p className="contact-item">
                 <span className="contact-icon">📧</span>
-                <span>sneha@example.com</span>
+                <span>threatlayer@gmail.com</span>
               </p>
               <p className="contact-item">
                 <span className="contact-icon">📍</span>
@@ -89,16 +89,16 @@ const Footer: React.FC = () => {
             </div>
             
             <div className="social-links">
-              <a href="https://github.com/sneha" className="social-link cursor-target github" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/amyy45" className="social-link cursor-target github" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/sneha" className="social-link cursor-target linkedin" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/sneha-sah-760b40250/" className="social-link cursor-target linkedin" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
-              <a href="https://twitter.com/sneha" className="social-link cursor-target twitter" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/threat_layer" className="social-link cursor-target twitter" target="_blank" rel="noopener noreferrer">
                 <FaTwitter />
               </a>
-              <a href="https://discord.com/users/sneha" className="social-link cursor-target discord" target="_blank" rel="noopener noreferrer">
+              <a href="https://discord.com/users/its_sneha" className="social-link cursor-target discord" target="_blank" rel="noopener noreferrer">
                 <FaDiscord />
               </a>
             </div>
