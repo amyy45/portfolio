@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo">
-          <a href="#hero" className="logo-link">
+          <a href="/" className="logo-link">
             <span className="logo-bracket">[</span>
             <span className="logo-text">Trace_Route</span>
             <span className="logo-bracket">]</span>
