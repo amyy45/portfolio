@@ -22,7 +22,9 @@ const Projects: React.FC = () => {
         "Suspicious file reporting system"
       ],
       image: stegoshieldImage,
-      status: "completed"
+      status: "completed",
+      demoLink: "https://stego-shield.vercel.app/",
+      githubLink: "https://github.com/amyy45/StegoShield"
     },
     {
       id: 2,
@@ -37,7 +39,9 @@ const Projects: React.FC = () => {
         "Network monitoring practices"
       ],
       image: cyberLabsImage,
-      status: "completed"
+      status: "completed",
+      demoLink: null, // No demo available
+      githubLink: "null"
     },
     {
       id: 3,
@@ -52,7 +56,9 @@ const Projects: React.FC = () => {
         "Remediation recommendations"
       ],
       image: vulnerabilityScanImage,
-      status: "ongoing"
+      status: "ongoing",
+      demoLink: null, // No demo available for ongoing project
+      githubLink: "https://github.com/amyy45/network-vulnerability-scanning"
     }
   ];
 
@@ -116,16 +122,37 @@ const Projects: React.FC = () => {
                 </div>
                 
                 <div className="project-actions">
-                  <button className="professional-btn primary cursor-target">
-                    <span className="btn-icon">👁️</span>
-                    <span className="btn-text">View Demo</span>
-                    <div className="btn-hover-effect"></div>
-                  </button>
-                  <button className="professional-btn secondary cursor-target">
+                  {project.demoLink ? (
+                    <a 
+                      href={project.demoLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="professional-btn primary cursor-target"
+                    >
+                      <span className="btn-icon">👁️</span>
+                      <span className="btn-text">View Demo</span>
+                      <div className="btn-hover-effect"></div>
+                    </a>
+                  ) : (
+                    <button 
+                      className="professional-btn primary cursor-target disabled"
+                      disabled
+                    >
+                      <span className="btn-icon">⏳</span>
+                      <span className="btn-text">Demo Coming Soon</span>
+                    </button>
+                  )}
+                  
+                  <a 
+                    href={project.githubLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="professional-btn secondary cursor-target"
+                  >
                     <span className="btn-icon">🐙</span>
                     <span className="btn-text">GitHub</span>
                     <div className="btn-hover-effect"></div>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

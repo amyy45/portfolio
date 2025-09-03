@@ -63,9 +63,9 @@ const Footer: React.FC = () => {
             <h4 className="resources-heading">Resources</h4>
             <ul className="resources-list">
               <li><a href="/resume.pdf" className="cursor-target" target="_blank" rel="noopener noreferrer">Resume</a></li>
-              <li><a href="/blog" className="cursor-target">Blog</a></li>
+              <li><a href="/" className="cursor-target">Blog</a></li>
               <li><a href="/projects" className="cursor-target">Case Studies</a></li>
-              <li><a href="/certifications" className="cursor-target">Certifications</a></li>
+              <li><a href="/certificates" className="cursor-target">Certifications</a></li>
             </ul>
           </div>
           
