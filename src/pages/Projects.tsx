@@ -7,6 +7,7 @@ import stegoshieldImage from '../assets/stegoshield.jpg';
 import vulnerabilityScanImage from '../assets/vulnerability-scan.png';
 import cyberLabsImage from '../assets/cyber-labs.png';
 
+import { FaGithub} from 'react-icons/fa';
 const Projects: React.FC = () => {
   const projects = [
     {
@@ -149,7 +150,7 @@ const Projects: React.FC = () => {
                     rel="noopener noreferrer"
                     className="professional-btn secondary cursor-target"
                   >
-                    <span className="btn-icon">🐙</span>
+                    <FaGithub className="btn-icon" />
                     <span className="btn-text">GitHub</span>
                     <div className="btn-hover-effect"></div>
                   </a>
