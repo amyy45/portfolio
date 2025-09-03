@@ -170,16 +170,11 @@ const About: React.FC = () => {
           </div>
           
           <div className="action-buttons">
-            <button className="professional-btn primary cursor-target">
+            <a href='/cover_letter.pdf' className="professional-btn primary cursor-target">
               <span className="btn-icon">📄</span>
-              <span className="btn-text">View Resume</span>
+              <span className="btn-text">Cover Letter</span>
               <div className="btn-hover-effect"></div>
-            </button>
-            <button className="professional-btn secondary cursor-target">
-              <span className="btn-icon">✍️</span>
-              <span className="btn-text">Read My Blog</span>
-              <div className="btn-hover-effect"></div>
-            </button>
+            </a> 
           </div>
         </div>
       </div>

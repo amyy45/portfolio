@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
           </div>
           
           <div className="nav-extra">
-            <a href="/resume.pdf" className="resume-btn cursor-target" target="_blank" rel="noopener noreferrer">
+            <a href="\resume.pdf" className="resume-btn cursor-target" target="_blank" rel="noopener noreferrer">
               Resume
             </a>
           </div>

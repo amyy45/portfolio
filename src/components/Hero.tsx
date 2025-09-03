@@ -73,16 +73,16 @@ const Hero: React.FC = () => {
               </div>
               
               <div className="action-buttons">
-                <button className="professional-btn primary cursor-target">
+                <a href="#projects" className="professional-btn primary cursor-target">
                   <span className="btn-icon">🔐</span>
                   <span className="btn-text">Projects</span>
                   <div className="btn-hover-effect"></div>
-                </button>
-                <button className="professional-btn secondary cursor-target">
+                </a>
+                <a href="#skills" className="professional-btn secondary cursor-target">
                   <span className="btn-icon">🐉</span>
                   <span className="btn-text">Skills</span>
                   <div className="btn-hover-effect"></div>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -169,14 +169,26 @@ const Hero: React.FC = () => {
           </div>
         </div>
         
-        <div className="scroll-indicator">
+        <a href="#about" className="scroll-indicator">
           <div className="scroll-text">Explore my cybersecurity journey</div>
           <div className="scroll-arrow">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 5V19M12 19L19 12M12 19L5 12"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </div>
-        </div>
+        </a>
       </div>
     </section>
   );
