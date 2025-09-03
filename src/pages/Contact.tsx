@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
     subject: '',
     message: ''
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitted, ] = useState(false);
   
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
