@@ -139,16 +139,12 @@ const Skills: React.FC = () => {
         </div>
         
         <div className="action-buttons">
-          <button className="professional-btn primary cursor-target">
+          <a href='/certificates' className="professional-btn primary cursor-target">
             <span className="btn-icon">📄</span>
             <span className="btn-text">View Certifications</span>
             <div className="btn-hover-effect"></div>
-          </button>
-          <button className="professional-btn secondary cursor-target">
-            <span className="btn-icon">🎓</span>
-            <span className="btn-text">Education</span>
-            <div className="btn-hover-effect"></div>
-          </button>
+          </a>
+          
         </div>
       </div>
     </section>
