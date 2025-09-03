@@ -13,6 +13,7 @@ const Contact: React.FC = () => {
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -21,23 +22,6 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // In a real application, you would handle form submission here
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-    }, 3000);
-  };
 
   return (
     <section id="contact" className="contact">
@@ -160,7 +144,7 @@ const Contact: React.FC = () => {
                 <p>Thank you for reaching out. I'll get back to you soon.</p>
               </div>
             ) : (
-              <form className="contact-form" onSubmit={handleSubmit}>
+              <form className="contact-form" action={"https://getform.io/f/bejeemea"} method='POST'>
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
                   <input
