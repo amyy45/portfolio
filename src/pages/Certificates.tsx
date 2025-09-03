@@ -7,43 +7,43 @@ const Certificates: React.FC = () => {
     {
       title: "Cyber Security and Privacy",
       issuer: "NPTEL",
-      date: "2023",
-      link: "https://nptel.ac.in/noc/individual_course.php?id=210",
+      date: "2024",
+      link: "https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs121/Course/NPTEL24CS121S95020444604320334.pdf",
       description: "Comprehensive course covering fundamental concepts of cybersecurity and privacy protection mechanisms."
     },
     {
       title: "Cybersecurity Analyst Job Simulation",
       issuer: "TCS (Forage)",
-      date: "2023",
-      link: "https://www.theforage.com/simulations/cybersecurity/tcs",
+      date: "2025",
+      link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_cDjZ2xzjZkax9pMpX_1736775634604_completion_certificate.pdf",
       description: "Hands-on simulation of real-world cybersecurity analyst tasks and scenarios."
     },
     {
       title: "Foundations of Cybersecurity",
       issuer: "Google",
-      date: "2023",
-      link: "https://grow.google/certificates/cybersecurity/",
+      date: "2024",
+      link: "https://coursera.org/share/f2025c78f5cbe97d3edf78db398e6b1d",
       description: "Fundamental principles of cybersecurity including threats, vulnerabilities, and defense strategies."
     },
     {
       title: "Google Cybersecurity Professional Certificate",
       issuer: "Coursera",
-      date: "2023",
-      link: "https://www.coursera.org/professional-certificates/google-cybersecurity",
+      date: "2025",
+      link: "https://coursera.org/share/3db8d2a988911c354de91ae77eff1e57",
       description: "Professional certificate covering tools and protocols to safeguard against cyber threats."
     },
     {
       title: "AWS Academy Cloud Foundations",
       issuer: "AWS Academy",
-      date: "2023",
-      link: "https://aws.amazon.com/training/awsacademy/",
+      date: "2025",
+      link: "https://www.credly.com/badges/d13be78a-e76c-40b9-8eaa-e8e358971969/print",
       description: "Fundamental understanding of AWS Cloud concepts, services, and security."
     },
     {
       title: "Practical Cyber Security for Cyber Security Practitioners",
       issuer: "NPTEL",
-      date: "2023",
-      link: "https://nptel.ac.in/courses/106105184",
+      date: "2024",
+      link: "https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs85/Course/NPTEL24CS85S35020344504320334.pdf",
       description: "Advanced practical techniques for cybersecurity professionals."
     }
   ];
@@ -120,16 +120,6 @@ const Certificates: React.FC = () => {
               Currently pursuing advanced certifications in ethical hacking and cloud security.
             </p>
             
-            <div className="cta-button-container">
-              <button 
-                className="professional-btn primary cursor-target"
-                onClick={() => window.open('/learning-path', '_blank')}
-              >
-                <span className="btn-icon">📚</span>
-                <span className="btn-text">View My Learning Path</span>
-                <div className="btn-hover-effect"></div>
-              </button>
-            </div>
           </div>
         </div>
       </div>

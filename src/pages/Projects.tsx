@@ -4,7 +4,6 @@ import '../projects.css';
 
 // Import project images (you'll need to add these to your project)
 import stegoshieldImage from '../assets/stegoshield.jpg';
-import expenseTrackerImage from '../assets/expense-tracker.png';
 import vulnerabilityScanImage from '../assets/vulnerability-scan.png';
 import cyberLabsImage from '../assets/cyber-labs.png';
 
@@ -27,17 +26,17 @@ const Projects: React.FC = () => {
     },
     {
       id: 2,
-      title: "Personal Expense Tracker",
-      stack: "PHP, MySQL, HTML, CSS, JavaScript",
-      description: "Built a budget management system with visual analytics to track spending patterns.",
+      title: "Mini Cybersecurity Labs / Practice Projects",
+      stack: "Linux, Wireshark, Burp Suite, Python Scripts",
+      description: "Hands-on labs covering various cybersecurity domains and practical security testing.",
       features: [
-        "Expense categorization",
-        "Interactive charts & reports",
-        "Budget planning tools",
-        "Financial insights dashboard",
-        "Export functionality"
+        "Incident response escalation",
+        "Log analysis exercises",
+        "Password cracking techniques",
+        "Web application security testing",
+        "Network monitoring practices"
       ],
-      image: expenseTrackerImage,
+      image: cyberLabsImage,
       status: "completed"
     },
     {
@@ -54,21 +53,6 @@ const Projects: React.FC = () => {
       ],
       image: vulnerabilityScanImage,
       status: "ongoing"
-    },
-    {
-      id: 4,
-      title: "Mini Cybersecurity Labs / Practice Projects",
-      stack: "Linux, Wireshark, Burp Suite, Python Scripts",
-      description: "Hands-on labs covering various cybersecurity domains and practical security testing.",
-      features: [
-        "Incident response escalation",
-        "Log analysis exercises",
-        "Password cracking techniques",
-        "Web application security testing",
-        "Network monitoring practices"
-      ],
-      image: cyberLabsImage,
-      status: "completed"
     }
   ];
 

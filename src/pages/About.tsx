@@ -99,7 +99,7 @@ const About: React.FC = () => {
               <span className="command">cat education.txt</span>
             </div>
             
-            <div className="edu-exp-content">
+            <div className="edu-exp-content education">
               <div className="edu-exp-item">
                 <div className="edu-exp-header">
                   <h3 className="edu-exp-title">Icfai University, Hyderabad</h3>
