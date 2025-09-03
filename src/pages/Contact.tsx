@@ -63,7 +63,31 @@ const Contact: React.FC = () => {
               
               <div className="info-items">
                 <a href="mailto:threatlayer@gmail.com" className="info-item cursor-target block no-underline">
-                  <div className="info-icon">📧</div>
+                  <div className="info-icon email" role="img" aria-label="Email">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M22 6 12 13 2 6"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </div>
+
                   <div className="info-content">
                     <h3>Email</h3>
                     <p>threatlayer@gmail.com</p>
@@ -72,7 +96,26 @@ const Contact: React.FC = () => {
 
                 
                 <div className="info-item cursor-target">
-                  <div className="info-icon">📍</div>
+                  <div className="info-icon" role="img" aria-label="Location">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 21s-8-7.58-8-12a8 8 0 1 1 16 0c0 4.42-8 12-8 12Z"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        fill="none"
+                      />
+                      <circle cx="12" cy="9" r="3" stroke="currentColor" strokeWidth="2" />
+                    </svg>
+                  </div>
+
                   <div className="info-content">
                     <h3>Location</h3>
                     <p>Hyderabad, India</p>
