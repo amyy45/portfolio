@@ -106,7 +106,7 @@ const About: React.FC = () => {
                   <span className="edu-exp-period">2022 – 2026</span>
                 </div>
                 <p className="edu-exp-subtitle">B.Tech in Computer Science Engineering</p>
-                <p className="edu-exp-detail">CGPA: 7.92 (till 7th semester)</p>
+                <p className="edu-exp-detail">CGPA: 7.92 (till 6th semester)</p>
               </div>
               
               <div className="edu-exp-item">

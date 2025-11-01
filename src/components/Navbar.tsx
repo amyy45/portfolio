@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import '../index.css';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +25,24 @@ const Navbar: React.FC = () => {
     setIsMenuOpen(false);
   };
 
+  // 🔥 Common handler for all internal section links
+  const handleNavClick = (e: React.MouseEvent, sectionId: string) => {
+    e.preventDefault();
+    closeMenu();
+
+    const scrollToSection = () => {
+      const section = document.getElementById(sectionId);
+      if (section) section.scrollIntoView({ behavior: "smooth" });
+    };
+
+    if (location.pathname === "/") {
+      scrollToSection();
+    } else {
+      navigate("/");
+      setTimeout(scrollToSection, 500);
+    }
+  };
+
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
@@ -35,38 +56,38 @@ const Navbar: React.FC = () => {
 
         <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <div className="nav-item">
-            <a href="#hero" className="nav-link" onClick={closeMenu}>
+            <Link to="/" className="nav-link" onClick={(e) => handleNavClick(e, "hero")}>
               <span className="link-number">01.</span>
               <span className="link-text">Home</span>
-            </a>
+            </Link>
           </div>
           <div className="nav-item">
-            <a href="#about" className="nav-link" onClick={closeMenu}>
+            <Link to="/" className="nav-link" onClick={(e) => handleNavClick(e, "about")}>
               <span className="link-number">02.</span>
               <span className="link-text">About</span>
-            </a>
+            </Link>
           </div>
           <div className="nav-item">
-            <a href="#skills" className="nav-link" onClick={closeMenu}>
+            <Link to="/" className="nav-link" onClick={(e) => handleNavClick(e, "skills")}>
               <span className="link-number">03.</span>
               <span className="link-text">Skills</span>
-            </a>
+            </Link>
           </div>
           <div className="nav-item">
-            <a href="#projects" className="nav-link" onClick={closeMenu}>
+            <Link to="/" className="nav-link" onClick={(e) => handleNavClick(e, "projects")}>
               <span className="link-number">04.</span>
               <span className="link-text">Projects</span>
-            </a>
+            </Link>
           </div>
           <div className="nav-item">
-            <a href="#contact" className="nav-link" onClick={closeMenu}>
+            <Link to="/" className="nav-link" onClick={(e) => handleNavClick(e, "contact")}>
               <span className="link-number">05.</span>
               <span className="link-text">Contact</span>
-            </a>
+            </Link>
           </div>
-          
+
           <div className="nav-extra">
-            <a href="\resume.pdf" className="resume-btn cursor-target" target="_blank" rel="noopener noreferrer">
+            <a href="/resume .pdf" className="resume-btn cursor-target" target="_blank" rel="noopener noreferrer">
               Resume
             </a>
           </div>

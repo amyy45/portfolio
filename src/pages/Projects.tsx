@@ -6,6 +6,7 @@ import '../projects.css';
 import stegoshieldImage from '../assets/stegoshield.jpg';
 import vulnerabilityScanImage from '../assets/vulnerability-scan.png';
 import cyberLabsImage from '../assets/cyber-labs.png';
+import phishAIImage from '../assets/phishai.png';
 
 import { FaGithub} from 'react-icons/fa';
 const Projects: React.FC = () => {
@@ -29,6 +30,23 @@ const Projects: React.FC = () => {
     },
     {
       id: 2,
+      title: "PhishAI - Phishing Detection System",
+      stack: "FastAPI, React, Scikit-learn, Logistic Regression, Random Forest",
+      description: "An AI-based web application that detects phishing URLs using machine learning models trained on URL features and metadata.",
+      features: [
+        "Real-time phishing URL detection",
+        "Machine learning models for classification",
+        "Interactive and responsive web interface",
+        "Confidence-based prediction output",
+        "Secure backend API integration"
+      ],
+      image: phishAIImage,
+      status: "completed",
+      demoLink: "https://phishai.vercel.app/", 
+      githubLink: "https://github.com/aashritha99/phishAI"
+    },
+    {
+      id: 3,
       title: "Mini Cybersecurity Labs / Practice Projects",
       stack: "Linux, Wireshark, Burp Suite, Python Scripts",
       description: "Hands-on labs covering various cybersecurity domains and practical security testing.",
@@ -41,11 +59,11 @@ const Projects: React.FC = () => {
       ],
       image: cyberLabsImage,
       status: "completed",
-      demoLink: null, // No demo available
+      demoLink: "N/A",
       githubLink: "null"
     },
     {
-      id: 3,
+      id: 4,
       title: "Network Vulnerability Scanning & Reporting",
       stack: "Kali Linux, Nmap, OpenVAS, Python",
       description: "Conducting comprehensive vulnerability assessments on simulated network environments.",
